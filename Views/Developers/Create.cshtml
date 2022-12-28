@@ -1,0 +1,20 @@
+@model CreateNewDeveloperViewModel
+
+<h1>Create New Developer</h1>
+
+<form asp-controller="Developers" asp-action="Create" method="post">
+<div>
+<label asp-for="Name" class="control-label"></label>
+<input asp-for="Name" class="form-control" />
+<span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div>
+<label asp-for="Email" class="control-label"></label>
+<input asp-for="Email" class="form-control" />
+<span asp-validation-for="Email" class="text-danger"></span>
+</div>
+<br>
+ <input type="submit" value="Create" class="btn btn-primary" />
+
+</form>
+<a asp-controller="Developers" asp-action="Index">Back To Index</a>

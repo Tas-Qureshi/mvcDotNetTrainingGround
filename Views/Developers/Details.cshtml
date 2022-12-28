@@ -1,0 +1,10 @@
+@model DetailsViewModel
+
+<h1>Details</h1>
+<ul>
+<li>@Html.DisplayNameFor(d => d.DeveloperVM.Id) : @Html.DisplayFor(model => model.DeveloperVM.Id)</li>
+
+<li>@Html.DisplayNameFor(m => m.DeveloperVM.Name) : @Model.DeveloperVM.Name</li>
+<li>@Html.DisplayNameFor(m => m.DeveloperVM.Email) : @Model.DeveloperVM.Email</li>
+</ul>
+<a asp-controller="Developers" asp-action="Index">Back to list</a>
